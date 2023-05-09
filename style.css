@@ -243,7 +243,7 @@ img{
     .img{width: 125px; height: 135px;}
     #pcont{top: 20vh}
     footer{top: 185vh; left: 4vw}
-    #addresses{max-width: 98vw; max-height: 20vh; top: 82vh; padding: 0; left: 1vw; font-size: 18px;}
+    #addresses{width: 98vw; max-height: 20vh; top: 82vh; padding: 0; left: 1vw; font-size: 18px;}
     .btn{left: 4vw; top: 12vh}
     #clear{left: calc(4vw + 73px); max-width: 40px}
     #pcont{left: 4vw;}
