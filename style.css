@@ -247,5 +247,8 @@ img{
     .btn{left: 4vw; top: 12vh}
     #clear{left: calc(4vw + 73px); max-width: 40px}
     #pcont{left: 4vw;}
+    ::-webkit-scrollbar {
+    width: 20px;
+}
 /*    #addresses{max-width: 99vw; height: 4vh; font-size: 20px; display: block; padding: 0; top: 96%; left: 1vw; overflow-x: scroll; white-space: nowrap;}*/
 }
