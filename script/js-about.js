@@ -286,3 +286,18 @@ draggableElements.forEach(function(draggableElement) {
     el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
   }
 });
+
+const buttons = document.querySelectorAll('.btn');
+const colors = ['#81153b', '#1300e3', '#109840', '#d855c4', '#ccc485'];
+
+buttons.forEach((button) => {
+  button.addEventListener('mouseover', () => {
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    button.style.color = randomColor;
+    button.style.borderColor = randomColor;
+  });
+    button.addEventListener('mouseout', () => {
+    button.style.color = 'black';
+    button.style.borderColor = 'black';
+  });
+});
