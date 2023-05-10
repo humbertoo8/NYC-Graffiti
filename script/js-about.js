@@ -1,48 +1,37 @@
-// Get the div with ID "layer2"
 const layer2 = document.querySelector("#layer2");
 
 function bx() {
-        // Create a new div element
     const newDiv = document.createElement("div");
 
-    // Set the class of the new div element
     newDiv.className = "img";
     newDiv.setAttribute('id','bx');
 
-    // Create a new img element and set its source and class
     const newImg = document.createElement("img");
     newImg.src = "BRONX%202129%20davidson%20ave%20.png";
     newImg.className = "abimg";
 
-    // Create a new div element and set its class and content
     const newInnerDiv = document.createElement("div");
     newInnerDiv.className = "BRONX";
     newInnerDiv.textContent = "2129 davidson ave, bronx";
 
-    // Add the new img and div elements as children of the new div element
     newDiv.appendChild(newImg);
     newDiv.appendChild(newInnerDiv);
 
-    // Set the position of the new div element randomly
     const randomX = Math.floor(Math.random() * layer2.offsetWidth);
     const randomY = Math.floor(Math.random() * layer2.offsetHeight);
     newDiv.style.position = "absolute";
     newDiv.style.left = randomX + "px";
     newDiv.style.top = randomY + "px";
 
-    // Add the new div element to the layer2 div
     layer2.appendChild(newDiv);
 };
 
 function mn() {
-        // Create a new div element
     const newDiv = document.createElement("div");
 
-    // Set the class of the new div element
     newDiv.className = "img";
     newDiv.setAttribute('id','mn');
 
-    // Create a new img element and set its source and class
     const newImg = document.createElement("img");
     newImg.src = "MANHATTAN%2057%20Allen%20St.png";
     newImg.className = "abimg";
@@ -148,7 +137,7 @@ function si() {
 
     // Create a new div element and set its class and content
     const newInnerDiv = document.createElement("div");
-    newInnerDiv.className = "STATEN ISLAND";
+    newInnerDiv.className = "STATENISLAND";
     newInnerDiv.textContent = "1406 richmond terrace, staten island";
 
     // Add the new img and div elements as children of the new div element
@@ -166,33 +155,11 @@ function si() {
     layer2.appendChild(newDiv);
 };
 
-//function text () {
-//        // Create a new div element
-//    const newDiv = document.createElement("div");
-//
-//    // Set the class of the new div element
-//    newDiv.className = "img";
-//    newDiv.setAttribute('id','txt'); 
-//    newDiv.textContent = "images from google maps, locations pulled from graffiti data";
-//
-//    // Set the position of the new div element randomly
-//    const randomX = Math.floor(Math.random() * layer2.offsetWidth);
-//    const randomY = Math.floor(Math.random() * layer2.offsetHeight);
-//    newDiv.style.position = "absolute";
-//    newDiv.style.left = randomX + "px";
-//    newDiv.style.top = randomY + "px";
-//
-//    // Add the new div element to the layer2 div
-//    layer2.appendChild(newDiv);
-//};
-
-
     bx();
     mn();
     bk();
     qn();
     si();
-//    text();
 
 // Make the DIV element draggable:
 dragElement(document.querySelector("#bx"));

@@ -5,6 +5,7 @@ body{
     padding: 0;
     margin: 0;
     background-color: #faf9f5;
+    font-family: serif;
 }
 h1{
 /*    text-align: center;*/
@@ -19,6 +20,17 @@ h1{
     position: absolute;
     margin: auto;
 */
+}
+#landing{
+    font-size: 18vw;
+    letter-spacing: -.3vw;
+}
+#landing-title{
+    top: 25vh;
+/*    left: 1vw;*/
+    position: absolute;
+    width: 100vw;
+    text-align: center;
 }
 h2{
     font-weight: normal;
@@ -44,6 +56,24 @@ footer{
     font-size: 14px;
 }
 
+td{
+    border: solid black 1px;
+    padding: 4px 7px 4px 7px;
+    margin: 0;
+}
+table{
+    border-collapse: collapse;
+}
+#table{
+/*    font-size: 20px;*/
+    z-index: 10;
+    position: absolute;
+    right: 2vw;
+    bottom: 4vh;
+}
+#table:hover{
+    background-color: #faf9f5;
+}
 p{
 /*    font-size: 20px;*/
 }
@@ -61,10 +91,9 @@ p{
     overflow: auto;
 }
 #about{
-   
+   top: 4vh
 }
 a{
-    font-size: 20px;
     color: inherit;
     text-decoration: none;
 }
@@ -78,15 +107,41 @@ a:hover{
 .btn{
     padding: 4px 7px 4px 7px;
     position: absolute;
-    top: 4vh;
+/*    top: 4vh;*/
     right: 2vw;
 /*    background-color: #faf9f5;*/
     border: solid black 1px;
     z-index: 10;
-    max-width: 45px;
+/*    max-width: 45px;*/
     text-align: center;
-    transition: all .1s ease;
-/*    border-radius: 3px;*/
+    font-size: 20px;
+}
+.btn:hover{
+    background-color: #faf9f5;
+}
+.btnlnd{
+    font-size: 36px;
+    top: 60vh;
+    z-index: 10;
+    padding: 6px 12px 6px 12px;
+    border: solid black 1px;
+    margin: 15px;
+}
+#btncont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 65vh;
+    left: calc(50vw - 125.9px);
+}
+#showcount{
+    bottom: 4vh;
+    max-width: 100px;
+    max-height: 23px;
+}
+.hidden{
+    display: none;
 }
 #box{
     border: 1px black solid;
@@ -164,7 +219,7 @@ img{
 .BRONX{
     color: #d855c4;
 }
-.STATEN ISLAND{
+.STATENISLAND{
     color: #ccc485;
 }
 
@@ -177,9 +232,18 @@ img{
 }
 #clear{
 /*    left: calc(2vw + 75px);*/
-    right: calc(2vw + 75px);
+    right: calc(2vw + 140px);
     font-size: 20px;
     cursor: pointer;
+    top: 4vh;
+    max-width: none;
+}
+#home{
+/*    left: calc(2vw + 75px);*/
+    right: calc(2vw + 69px);
+    font-size: 20px;
+    cursor: pointer;
+    top: 4vh;
 }
 
 @keyframes flash{
@@ -201,6 +265,11 @@ img{
     width: 80vw;
     height: 120vh;
     z-index: 2;
+}
+#x{
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
 }
 
 #pcont{
@@ -247,11 +316,14 @@ img{
     #pcont{top: 20vh}
     footer{top: 185vh; left: 4vw}
 /*    #addresses{width: 98vw; max-height: 20vh; top: 82vh; padding: 0; left: 1vw; font-size: 18px;}*/
-    .btn{left: 4vw; top: 12vh}
-    #clear{left: calc(4vw + 73px); max-width: 40px}
+    .btn{background-color: #faf9f5}
+    #clear{top: 12vh; left: 4vw; max-width: 80px;}
+    #home{top: 12vh; right: calc(4vw + 69px);}
+    #about{top: 12vh; right: 4vw;}
     #pcont{left: 4vw;}
-    ::-webkit-scrollbar {
-    width: 20px;
-}
+    ::-webkit-scrollbar {width: 20px;}
+    #showcount{bottom: 7vh; right: 4vw;}
+    #table{font-size: 17px; bottom: 7vh; max-width: 92vw; right: 4vw; background-color: #faf9f5}
     #addresses{max-width: 99vw; height: 5vh; font-size: 20px; display: block; padding: 0; top: 95%; left: 1vw; overflow-x: scroll; white-space: nowrap;}
+    #landing-title{top: 35vh; width:100vw; text-align:  }
 }
