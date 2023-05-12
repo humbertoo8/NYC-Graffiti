@@ -105,7 +105,7 @@ a:hover{
 }
 */
 .btn{
-    padding: 4px 7px 4px 7px;
+    padding: 4px 8px 4px 8px;
     position: absolute;
 /*    top: 4vh;*/
     right: 2vw;
@@ -137,7 +137,7 @@ a:hover{
 }
 #showcount{
     bottom: 4vh;
-    max-width: 100px;
+/*    max-width: 100px;*/
     max-height: 23px;
 }
 .hidden{
@@ -313,17 +313,21 @@ img{
     #title{top: 1vh; left: 4vw}
 /*    body{font-size: 12px}*/
     .img{width: 125px; height: 135px;}
-    #pcont{top: 20vh}
+    #pcont{top: 10vh; left: 4vw;}
     footer{top: 185vh; left: 4vw}
 /*    #addresses{width: 98vw; max-height: 20vh; top: 82vh; padding: 0; left: 1vw; font-size: 18px;}*/
     .btn{background-color: #faf9f5}
     #clear{top: 12vh; left: 4vw; max-width: 80px;}
     #home{top: 12vh; right: calc(4vw + 69px);}
+    #ab > #home{top: 4vh}
+    #ab > #about{top: 4vh}
     #about{top: 12vh; right: 4vw;}
-    #pcont{left: 4vw;}
+    #btncont{top: 48vh; left: calc(50vw - 100px)}
+    .btnlnd{font-size: 28px; margin: 10px;}
     ::-webkit-scrollbar {width: 20px;}
-    #showcount{bottom: 7vh; right: 4vw;}
-    #table{font-size: 17px; bottom: 7vh; max-width: 92vw; right: 4vw; background-color: #faf9f5}
-    #addresses{max-width: 99vw; height: 5vh; font-size: 20px; display: block; padding: 0; top: 95%; left: 1vw; overflow-x: scroll; white-space: nowrap;}
-    #landing-title{top: 35vh; width:100vw; text-align:  }
+    #showcount{bottom: 8vh; right: 4vw;}
+    #table{bottom: 8vh; max-width: 92vw; right: 4vw; background-color: #faf9f5}
+    #addresses{max-width: 99vw; min-height: 24px; height: 6vh; font-size: 20px; display: block; padding: 0; top: 94%; left: 1vw; overflow-x: scroll; white-space: nowrap;}
+    #landing-title{top: 36vh; width:100vw; text-align:  }
+    #btnlnd{background-color: #faf9f5; z-index: 3}
 }
